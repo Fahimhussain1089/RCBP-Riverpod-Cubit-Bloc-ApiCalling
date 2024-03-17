@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "592315590022",
+    "project_id": "authbloctest2",
+    "storage_bucket": "authbloctest2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592315590022:android:d0f15829bfd6c8c0cd3807",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoR8sxk7HiurnZa1_QhBOU6T88Xes_UME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:practice/Riverpod/familModifier/weatherScreen2.dart';
+import 'package:practice/provider/futureprovider/futureprovider.dar.dart';
+import 'package:practice/provider/futureprovider/weatherScreen.dart';
+
+final weatherProvider = FutureProvider.family.autoDispose<String,String>(
+      (ref,cityName) =>fetchWeatherReport2(cityName),
+);
+class familyModifier extends ConsumerWidget {
+  const familyModifier({super.key});
+
+  @override
+  Widget build(BuildContext context,WidgetRef ref) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('todya Weather'),backgroundColor: Colors.blue,
+      ),
+      body: ref.watch(weatherProvider("Lucknow")).when(
+        data: (data){
+          return Center(
+              child: Text(data));
+        },
+        error: (error, stackTrace){
+          return Text(error.toString());
+        },
+        loading: (){
+          return CircularProgressIndicator();
+        },
+      ),
+    );
+  }
+}
+
+
