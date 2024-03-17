@@ -44,7 +44,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC-CCe-ifGHCdOJf-BLwAmoe3zPEUilqCE',
+    apiKey: '',
     appId: '1:592315590022:web:dd36087821067d02cd3807',
     messagingSenderId: '592315590022',
     projectId: 'authbloctest2',
@@ -53,7 +53,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCoR8sxk7HiurnZa1_QhBOU6T88Xes_UME',
+    apiKey: '',
     appId: '1:592315590022:android:d0f15829bfd6c8c0cd3807',
     messagingSenderId: '592315590022',
     projectId: 'authbloctest2',
@@ -61,7 +61,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDolG4ZiLVzJSC6NO7U6AdqDY5EuPGk7nQ',
+    apiKey: '',
     appId: '1:592315590022:ios:6426c52ca8102d82cd3807',
     messagingSenderId: '592315590022',
     projectId: 'authbloctest2',
@@ -70,7 +70,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDolG4ZiLVzJSC6NO7U6AdqDY5EuPGk7nQ',
+    apiKey: '',
     appId: '1:592315590022:ios:c6fa3d07b4d6471dcd3807',
     messagingSenderId: '592315590022',
     projectId: 'authbloctest2',
